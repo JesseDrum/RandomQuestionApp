@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B16836127BD448E004C534F /* FristVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16836027BD448E004C534F /* FristVC.swift */; };
+		5B16836627BD46C4004C534F /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5B16836527BD46C4004C534F /* SDWebImage */; };
+		5B16836A27BD4A66004C534F /* EasyConfetti in Frameworks */ = {isa = PBXBuildFile; productRef = 5B16836927BD4A66004C534F /* EasyConfetti */; };
+		5B16836E27BEA1CF004C534F /* SPAlert in Frameworks */ = {isa = PBXBuildFile; productRef = 5B16836D27BEA1CF004C534F /* SPAlert */; };
 		5B92A9C227B1710F0037D573 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92A9C127B1710F0037D573 /* AppDelegate.swift */; };
 		5B92A9C427B1710F0037D573 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92A9C327B1710F0037D573 /* SceneDelegate.swift */; };
 		5B92A9C627B1710F0037D573 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92A9C527B1710F0037D573 /* ViewController.swift */; };
 		5B92A9C927B1710F0037D573 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B92A9C727B1710F0037D573 /* Main.storyboard */; };
 		5B92A9CB27B1711B0037D573 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B92A9CA27B1711B0037D573 /* Assets.xcassets */; };
 		5B92A9CE27B1711B0037D573 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B92A9CC27B1711B0037D573 /* LaunchScreen.storyboard */; };
+		5B92A9EB27B4164D0037D573 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92A9EA27B4164D0037D573 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B16836027BD448E004C534F /* FristVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristVC.swift; sourceTree = "<group>"; };
 		5B92A9BE27B1710F0037D573 /* RandomQuestionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuestionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B92A9C127B1710F0037D573 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B92A9C327B1710F0037D573 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,7 @@
 		5B92A9CA27B1711B0037D573 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B92A9CD27B1711B0037D573 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B92A9CF27B1711B0037D573 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B92A9EA27B4164D0037D573 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B16836E27BEA1CF004C534F /* SPAlert in Frameworks */,
+				5B16836A27BD4A66004C534F /* EasyConfetti in Frameworks */,
+				5B16836627BD46C4004C534F /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +69,9 @@
 				5B92A9C127B1710F0037D573 /* AppDelegate.swift */,
 				5B92A9C327B1710F0037D573 /* SceneDelegate.swift */,
 				5B92A9C527B1710F0037D573 /* ViewController.swift */,
+				5B92A9EA27B4164D0037D573 /* Question.swift */,
 				5B92A9C727B1710F0037D573 /* Main.storyboard */,
+				5B16836027BD448E004C534F /* FristVC.swift */,
 				5B92A9CA27B1711B0037D573 /* Assets.xcassets */,
 				5B92A9CC27B1711B0037D573 /* LaunchScreen.storyboard */,
 				5B92A9CF27B1711B0037D573 /* Info.plist */,
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = RandomQuestionApp;
+			packageProductDependencies = (
+				5B16836527BD46C4004C534F /* SDWebImage */,
+				5B16836927BD4A66004C534F /* EasyConfetti */,
+				5B16836D27BEA1CF004C534F /* SPAlert */,
+			);
 			productName = RandomQuestionApp;
 			productReference = 5B92A9BE27B1710F0037D573 /* RandomQuestionApp.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +127,11 @@
 				Base,
 			);
 			mainGroup = 5B92A9B527B1710F0037D573;
+			packageReferences = (
+				5B16836427BD46C4004C534F /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5B16836827BD4A66004C534F /* XCRemoteSwiftPackageReference "EasyConfetti" */,
+				5B16836C27BEA1CF004C534F /* XCRemoteSwiftPackageReference "SPAlert" */,
+			);
 			productRefGroup = 5B92A9BF27B1710F0037D573 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B92A9C627B1710F0037D573 /* ViewController.swift in Sources */,
+				5B92A9EB27B4164D0037D573 /* Question.swift in Sources */,
 				5B92A9C227B1710F0037D573 /* AppDelegate.swift in Sources */,
 				5B92A9C427B1710F0037D573 /* SceneDelegate.swift in Sources */,
+				5B16836127BD448E004C534F /* FristVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B16836427BD46C4004C534F /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.3;
+			};
+		};
+		5B16836827BD4A66004C534F /* XCRemoteSwiftPackageReference "EasyConfetti" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onmyway133/EasyConfetti.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
+		5B16836C27BEA1CF004C534F /* XCRemoteSwiftPackageReference "SPAlert" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPAlert";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B16836527BD46C4004C534F /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B16836427BD46C4004C534F /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		5B16836927BD4A66004C534F /* EasyConfetti */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B16836827BD4A66004C534F /* XCRemoteSwiftPackageReference "EasyConfetti" */;
+			productName = EasyConfetti;
+		};
+		5B16836D27BEA1CF004C534F /* SPAlert */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B16836C27BEA1CF004C534F /* XCRemoteSwiftPackageReference "SPAlert" */;
+			productName = SPAlert;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B92A9B627B1710F0037D573 /* Project object */;
 }
